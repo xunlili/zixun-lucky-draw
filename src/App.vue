@@ -40,6 +40,7 @@
             <span class="cont" v-if="!photos.find(d => d.id === item)">
               <span
                 v-if="!!list.find(d => d.key === item)"
+                class="cout-name"
                 :style="{
                   fontSize: '22px'
                 }"
@@ -367,16 +368,16 @@ export default {
 <style lang="scss">
 .cur-prize {
   position: fixed;
-  left: 100px;
+  left: 50px;
   bottom: 150px;
-  background: #fff;
-  width: 200px;
+  width: 350px;
   height: 150px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 #root {
   height: 100%;
@@ -492,5 +493,9 @@ export default {
       z-index: 1;
     }
   }
+}
+
+.itemres {
+  height: 60px !important;
 }
 </style>
